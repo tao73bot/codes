@@ -1,0 +1,130 @@
+#include <stdio.h>
+
+void eng_num(int n)
+{
+    if(n>20&&n<30){
+        printf("twenty-");
+        eng_num(n%20);
+    }
+    if(n>30&&n<40){
+        printf("thirty-");
+        eng_num(n%30);
+    }
+    if(n>40&&n<50){
+        printf("forty-");
+        eng_num(n%40);
+    }
+    if(n>50&&n<60){
+        printf("fifty-");
+        eng_num(n%50);
+    }
+    if(n>60&&n<70){
+        printf("sixty-");
+        eng_num(n%60);
+    }
+    if(n>70&&n<80){
+        printf("seventy-");
+        eng_num(n%70);
+    }
+    if(n>80&&n<90){
+        printf("eighty-");
+        eng_num(n%80);
+    }
+    if(n>90&&n<100){
+        printf("ninety-");
+        eng_num(n%90);
+    }
+    if(n==1){
+        printf("one",n);
+    }
+    if(n==2){
+        printf("two",n);
+    }
+    if(n==3){
+        printf("three",n);
+    }
+    if(n==4){
+        printf("four",n);
+    }
+    if(n==5){
+        printf("five",n);
+    }
+    if(n==6){
+        printf("six",n);
+    }
+    if(n==7){
+        printf("seven",n);
+    }
+    if(n==8){
+        printf("eight",n);
+    }
+    if(n==9){
+        printf("nine",n);
+    }
+    if(n==10){
+        printf("ten",n);
+    }
+    if(n==11){
+        printf("eleven",n);
+    }
+    if(n==12){
+        printf("twelve",n);
+    }
+    if(n==13){
+        printf("thirteen",n);
+    }
+    if(n==14){
+        printf("fourteen",n);
+    }
+    if(n==15){
+        printf("fifteen",n);
+        
+    }
+    if(n==16){
+        printf("sixteen",n);
+    }
+    if(n==17){
+        printf("seventeen",n);
+    }
+    if(n==18){
+        printf("eighteen",n);
+    }
+    if(n==19){
+        printf("nineteen",n);
+    }
+    if(n==20){
+        printf("twenty",n);
+    }
+    if(n==30){
+        printf("thirty",n);
+    }
+    if(n==40){
+        printf("forty",n);
+    }
+    if(n==50){
+        printf("fifty",n);
+    }
+    if(n==60){
+        printf("sixty",n);
+    }
+    if(n==70){
+        printf("seventy",n);
+    }
+    if(n==80){
+        printf("eighty",n);
+    }
+    if(n==90){
+        printf("ninety",n);
+    }
+
+}
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    if(n==0) printf("zero");
+    eng_num(n);
+    printf("\n");
+    return 0;
+}
